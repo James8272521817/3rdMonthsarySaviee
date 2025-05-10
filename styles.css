@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(to bottom, #ffd6e7, #ffe6f2);
+  color: #333;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.page-title {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #ff4d88;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px white;
+}
+
+.lock-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ffeef5;
+  padding: 20px;
+}
+
+.lock-screen input {
+  padding: 12px;
+  margin: 10px;
+  border: 2px solid #ff4d4d;
+  border-radius: 8px;
+  font-size: 18px;
+  width: 80%;
+}
+
+.lock-screen button {
+  padding: 10px 25px;
+  background-color: #ff66b2;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+}
+
+.content {
+  display: none;
+  padding: 15px;
+}
+
+.image-frame {
+  width: 80%;
+  max-width: 300px;
+  margin: 15px auto;
+  padding: 10px;
+  border: 8px dashed #ff6699;
+  border-radius: 30px;
+  background: url('https://cdn.pixabay.com/photo/2014/04/03/10/32/hearts-311330_960_720.png') repeat;
+  background-size: 50px;
+}
+
+.image-frame img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.message-section {
+  margin-top: 30px;
+}
+
+.open-envelope {
+  padding: 12px 20px;
+  background: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.message-content {
+  display: none;
+  margin-top: 20px;
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: left;
+  border: 4px dotted #ff85a2;
+  box-shadow: 2px 2px 15px rgba(255, 105, 180, 0.3);
+  background-image: url('https://cdn.pixabay.com/photo/2014/04/03/10/32/hearts-311330_960_720.png');
+  background-repeat: repeat;
+  background-size: 30px;
+  color: #8b004b;
+}
+
+.music-section {
+  margin: 30px auto;
+  max-width: 90%;
+}
+
+iframe {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.emoji-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://cdn.pixabay.com/photo/2020/01/14/23/02/heart-4763450_960_720.png');
+  background-repeat: repeat;
+  opacity: 0.07;
+  z-index: -1;
+}
+
+@media screen and (max-width: 480px) {
+  .lock-screen input,
+  .lock-screen button,
+  .open-envelope {
+    font-size: 16px;
+  }
+}
